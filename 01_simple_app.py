@@ -20,4 +20,4 @@ for i in range(1, 101):
 
 progress_bar.empty()
 
-st.button(['Re-run'])
+st.button('Re-run')
