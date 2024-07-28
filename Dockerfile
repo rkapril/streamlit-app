@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN pip install pipenv
 
-COPY pipfile ./pipfile
+COPY Pipfile ./Pipfile
 
 RUN pipenv install
 
