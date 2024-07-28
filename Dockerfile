@@ -4,7 +4,7 @@ FROM python:3.12
 
 WORKDIR /app
 
-COPY requirements.txt ./requirements.txt
+COPY requirements11.txt ./requirements11.txt
 
 RUN pip install -U pip
 
