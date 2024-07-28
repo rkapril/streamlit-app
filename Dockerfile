@@ -2,16 +2,16 @@
 
 FROM python:3.12
 
-WORKDIR /app
+# WORKDIR /app
 
-COPY requirements.txt ./requirements.txt
+# COPY requirements.txt ./requirements.txt
 
-RUN pip install -U pip
+# RUN pip install -U pip
 
-RUN pip3 install -r requirements.txt
+# RUN pip3 install -r requirements.txt
 
-COPY . .
+# COPY . .
 
-EXPOSE 8501
+# EXPOSE 8501
 
-ENTRYPOINT ["streamlit", "run", "01_simple_app.py", "-server.port=8080", "-server.address=0.0.0.0"]
+# ENTRYPOINT ["streamlit", "run", "01_simple_app.py", "-server.port=8080", "-server.address=0.0.0.0"]
