@@ -4,11 +4,11 @@ FROM python:3.12
 
 WORKDIR /app
 
-COPY requirements.txt ./requirements.txt
+RUN pip install pipenv
 
-RUN pip install -U pip
+COPY pipfile ./pipfile
 
-RUN pip3 install -r requirements.txt
+RUN pipenv install
 
 COPY . .
 
