@@ -10,10 +10,13 @@
 - Altair
 - Object
 
-```
-st.write(1234)
-st.write(pd.DataFrame({
-  'first column': [1,2,3,4]
-  'second column': [10,20,30,40]
-}))
-```
+## Text elements
+
+- st.markdown
+- st.title
+- st.header
+- st.subheader
+- st.text
+- st.caption
+- st.code
+- st.latex

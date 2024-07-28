@@ -4,14 +4,14 @@ FROM python:3.12
 
 WORKDIR /app
 
-RUN apt-get update 
+COPY requirements.txt ./requirements.txt
 
-RUN pip install --upgrade pip
+RUN pip install -U pip
 
-COPY requirements.txt requirements.txt
-
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD ["streamlit", "run", "01_simple_app.py"]
+EXPOSE 8501
+
+ENTRYPOINT ["streamlit", "run", "01_simple_app.py", "-server.port=8080", "-server.address=0.0.0.0"]
