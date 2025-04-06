@@ -1,4 +1,4 @@
-# streamlit_app
+# streamlit-app
 
 ## Deployment
 
